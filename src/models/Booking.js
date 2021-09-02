@@ -10,7 +10,6 @@ const Booking = new Schema(
 		phone: String,
 		service: String,
 		date: Date,
-		time: String,
 	},
 	{
 		timestamps: true,
