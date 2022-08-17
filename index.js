@@ -1,41 +1,42 @@
-//app index
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000;
-const path = require('path');
-var mongoose = require('mongoose');
-var passport = require('passport');
-var flash = require('connect-flash');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var session = require('express-session');
-const routes = require('./src/routes');
+const PORT = process.env.PORT || 3000;
+
+const bodyParser = require('body-parser');
+const methodOverride = require('method-override');
+const passport = require('passport');
+const flash = require('connect-flash');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
+
+const routers = require('./src/routers/index');
 const db = require('./src/models');
-
-//app setting
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'src/views'));
-app.use(express.static(path.join(__dirname, 'src/public')));
-
-//dev
-const morgan = require('morgan');
-app.use(morgan('dev')); // log tất cả request ra console log
-// cài đặt ứng dùng express
-app.use(cookieParser()); // đọc cookie (cần cho xác thực)
-app.use(bodyParser()); // lấy thông tin từ html forms
-
-// các cài đặt cần thiết cho passport
-app.use(session({secret: 'infinitycoder'})); // chuối bí mật đã mã hóa coookie
+const path = require('path');
+app.use(cookieParser());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(session({ secret: 'infinitycoder' }));
 app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
-app.use(flash()); // use connect-flash for flash messages stored in session
+app.use(flash());
+//dev
+// const morgan = require('morgan');
+// app.use(morgan('dev')); // log tất cả request ra console log
+//Ghi đè phương thức (override method)
+app.use(methodOverride('_method'));
 
+//Use ejs
+app.set('view engine', 'ejs');
 
-//router
-routes(app, passport);
+//Set views
+app.set('views', path.join(__dirname, './src/views'));
+
+//Set static file
+app.use(express.static(path.join(__dirname, './src/public')));
+
+//routers
+routers(app);
 //database
 db.connect();
 
-app.listen(port, () => {
-	console.log(`Server is runing on http://localhost:${port}`);
-});
+app.listen(PORT, () => console.log('Listening on port ' + PORT));

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../layouts/manageHead') %>
+
+        <body>
+            <%- include('../layouts/manageSidebar') %>
+
+
+            
+                <!-- !PAGE CONTENT! -->
+                <div class="w3-main" style="margin-left:300px;">
+                    <!-- Top container -->
+                    <div class="w3-bar w3-top w3-light-grey w3-large w3-hide-large" style="z-index:4">
+                        <button class="w3-bar-item w3-button w3-hide-large w3-hover-none" onclick="w3_open();"><i
+                                class="fa fa-bars"></i>  Menu</button>
+                        <span class="w3-bar-item w3-right"><strong>Manager Page</strong></span>
+                    </div>
+
+                    <!-- Header -->
+                    <header class="w3-container" style="padding-top:22px">
+                        <h5><b><i class="fa fa-dashboard"></i> Demo form creator</b></h5>
+                    </header>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                <form action="/manager/staff" method="post">
+                                    <fieldset class="border p-3 mt-3">
+                                        <legend class="w-auto">Staff creator</legend>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12">
+                                                <label for="staff_avatar">Avatar:</label>
+                                                <input type="text" class="form-control" id="staff_avatar"
+                                                    name="staff_avatar" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12">
+                                                <label for="staff_fullname">Full Name:</label>
+                                                <input type="text" class="form-control" id="staff_fullname"
+                                                    name="staff_fullname" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12">
+                                                <label for="staff_stars">Stars:</label>
+                                                <input type="number" class="form-control" id="staff_stars"
+                                                    name="staff_stars" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12">
+                                                <label for="staff_introduce">Staff Introduce:</label>
+                                                <textarea class="form-control" rows="5" id="staff_introduce"
+                                                    name="staff_introduce"></textarea>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <div class="row justify-content-center">
+                                        <div class="form-group mt-3">
+                                            <button type="submit" class="btn btn-primary">Create</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                <form action="/manager/service" method="post">
+                                    <fieldset class="border p-3 mt-3">
+                                        <legend class="w-auto">Service creator</legend>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12">
+                                                <label for="service_name">Service Name:</label>
+                                                <input type="text" class="form-control" id="service_name"
+                                                    name="service_name" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12">
+                                                <label for="service_introduce">Service Introduce:</label>
+                                                <textarea class="form-control" rows="5" id="service_introduce"
+                                                    name="service_introduce"></textarea>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <div class="row justify-content-center">
+                                        <div class="form-group mt-3">
+                                            <button type="submit" class="btn btn-primary">Create</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <%- include('../layouts/manageFooter') %>
+
+                    <script type="text/javascript">
+                    </script>
+        </body>
+
+</html>

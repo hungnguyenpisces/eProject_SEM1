@@ -3,11 +3,11 @@
         <div class="container d-flex justify-content-between">
             <div class="top-phone">
                 <i class="fas fa-phone-alt"></i>
-                (00) 000 111 222 | <i class="far fa-clock"></i> (00) 000 111 222
+                1800 1234 5678 | <i class="far fa-clock"></i> Monday - Friday (8:00 - 22:00)
             </div>
             <div class="top-contacts">
                 <i class="fas fa-envelope"></i>
-                <a href="/">info@example.com</a> |
+                <a href="/">haircare@gmail.com</a> |
                 <a href="/"> <i class="fab fa-twitter"></i></a>
                 <a href="/"><i class="fab fa-facebook-f"></i></a>
                 <a href="/"><i class="fab fa-google"></i></a>
@@ -26,25 +26,28 @@
             ">
             <div class="header-logo">
                 <a href="/">
-                    <img src="/images/logo.png" alt="" height="100%" /></a>
+                    <img src="https://res.cloudinary.com/lenn/image/upload/v1630582853/hairCare/logo_ynzfqs.png" alt=""
+                        height="100%" /></a>
             </div>
             <div class="header-icon d-flex">
                 <div class="mobile-menu-icon mr-3">
                     <i class="fas fa-bars"></i>
                 </div>
                 <div class="header-user mr-3 position-relative">
-                    <a data-toggle="modal" data-target="#header-modal" href="/profile" style="color: black;"><i
-                            class="fas fa-user"></i></a>
-
+                    <i class="fas fa-user"></i>
                     <ul class="header-user-list position-absolute">
                         <li class="header-user-item">
-                            <a href=""><i class="fas fa-sign-in-alt"></i>Log in</a>
+                            <a href="#"><i class="fas fa-sign-in-alt"></i>Log in</a>
                         </li>
                         <li class="header-user-item">
-                            <a href=""><i class="far fa-user"></i>Create acount</a>
+                            <a href="#"><i class="far fa-user"></i>Create acount</a>
                         </li>
                         <li class="header-user-item">
-                            <a href=""> <i class="far fa-heart"></i>Wishlist</a>
+                            <a href="#"> <i class="far fa-heart"></i>Wishlist</a>
+                        </li>
+                        <li class="header-user-item">
+                            <a href="/manager">
+                                <i class="fas fa-tasks"></i>Manager Page</a>
                         </li>
                     </ul>
                 </div>
@@ -66,7 +69,8 @@
                 ">
                 <div class="header-logo">
                     <a href="/">
-                        <img src="/images/logo.png" alt="" height="100%" /></a>
+                        <img src="https://res.cloudinary.com/lenn/image/upload/v1630582853/hairCare/logo_ynzfqs.png"
+                            alt="" height="100%" /></a>
                 </div>
                 <div class="header-icon d-flex">
                     <div class="mobile-menu-icon mr-3">
@@ -76,13 +80,13 @@
                         <i class="fas fa-user"></i>
                         <ul class="header-user-list position-absolute">
                             <li class="header-user-item">
-                                <a href=""><i class="fas fa-sign-in-alt"></i>Log in</a>
+                                <a href="#"><i class="fas fa-sign-in-alt"></i>Log in</a>
                             </li>
                             <li class="header-user-item">
-                                <a href=""><i class="far fa-user"></i>Create acount</a>
+                                <a href="#"><i class="far fa-user"></i>Create acount</a>
                             </li>
                             <li class="header-user-item">
-                                <a href="">
+                                <a href="#">
                                     <i class="far fa-heart"></i>Wishlist</a>
                             </li>
                         </ul>
@@ -99,47 +103,70 @@
             <ul class="
                     nav-list
                     d-flex
-                    justify-content-center
+                    justify-content-between
                     align-items-center
                 ">
-                <li class="nav-item"><a href="">Home</a></li>
+                <li class="nav-item"><a href="/">Home</a></li>
                 <li class="nav-item">
-                    <a href="">Services <i class="fas fa-sort-down"></i></a>
+                    <a href="/services">Services <i class="fas fa-sort-down"></i></a>
                     <ul class="nav-list-child">
-                        <li class="nav-item-child"><a href="">Goi dau</a></li>
-                        <li class="nav-item-child"><a href="">Uon</a></li>
-                        <li class="nav-item-child"><a href="">Xa</a></li>
-                        <li class="nav-item-child"><a href="">Hap dau</a></li>
+                        <li class="nav-item-child"><a href="/services#Cut+Style">Cut + Style</a></li>
+                        <li class="nav-item-child"><a href="/services#Color">Color</a></li>
+                        <li class="nav-item-child"><a href="/services#Texture">Texture</a></li>
+                        <li class="nav-item-child"><a href="/services#Specialty">Specialty</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="">Hair Problems <i class="fas fa-sort-down"></i></a>
+                    <a href="/hair-problems">Hair Problems <i class="fas fa-sort-down"></i></a>
                     <ul class="nav-list-child">
-                        <li class="nav-item-child"><a href="">Goi dau</a></li>
-                        <li class="nav-item-child"><a href="">Uon</a></li>
-                        <li class="nav-item-child"><a href="">Xa</a></li>
-                        <li class="nav-item-child"><a href="">Hap dau</a></li>
+                        <li class="nav-item-child">
+                            <a href="/hair-problems?type=Hair growth">Hair growth</a>
+                        </li>
+                        <li class="nav-item-child">
+                            <a href="/hair-problems?type=Frizzy hair">Frizzy hair</a>
+                        </li>
+                        <li class="nav-item-child">
+                            <a href="/hair-problems?type=Hair loss">Hair loss</a>
+                        </li>
+                        <li class="nav-item-child">
+                            <a href="/hair-problems?type=Split ends">Split ends</a>
+                        </li>
+                        <li class="nav-item-child">
+                            <a href="/hair-problems?type=Dandruff">Dandruff</a>
+                        </li>
+                        <li class="nav-item-child">
+                            <a href="/hair-problems?type=Dull lifeless hair">Dull lifeless hair</a>
+                        </li>
                     </ul>
                 </li>
+                <li class="nav-item"><a href="/booking"
+                        style="border-left: 2px solid;border-right: 2px solid;border-radius: 20px;">Booking</a></li>
                 <li class="nav-item">
-                    <a href="">Products <i class="fas fa-sort-down"></i></a>
+                    <a href="/products">Products <i class="fas fa-sort-down"></i></a>
                     <ul class="nav-list-child">
-                        <li class="nav-item-child"><a href="">Goi dau</a></li>
-                        <li class="nav-item-child"><a href="">Uon</a></li>
-                        <li class="nav-item-child"><a href="">Xa</a></li>
-                        <li class="nav-item-child"><a href="">Hap dau</a></li>
+                        <li class="nav-item-child"><a href="/products?category=Shampoo">Shampoo</a></li>
+                        <li class="nav-item-child"><a href="/products?category=Nature Haircare">Nature Haircare</a></li>
+                        <li class="nav-item-child"><a href="/products?category=Hair Treatments">Hair Treatments</a></li>
+                        <li class="nav-item-child"><a href="/products?category=Styling Products">Styling Products</a>
+                        </li>
+                        <li class="nav-item-child"><a href="/products?category=Hair Dryers">Hair Dryers</a></li>
+                        <li class="nav-item-child"><a href="/products?category=Flat Irons">Flat Irons</a></li>
+                        <li class="nav-item-child"><a href="/products?category=Curling Irons">Curling Irons</a></li>
+                        <li class="nav-item-child"><a href="/products?category=Cutting Tools">Cutting Tools</a></li>
                     </ul>
                 </li>
+           
                 <li class="nav-item">
-                    <a href="">Booking <i class="fas fa-sort-down"></i></a>
+                    <a href="/hair-styles">Hair Style <i class="fas fa-sort-down"></i></a>
                     <ul class="nav-list-child">
-                        <li class="nav-item-child"><a href="">Goi dau</a></li>
-                        <li class="nav-item-child"><a href="">Uon</a></li>
-                        <li class="nav-item-child"><a href="">Xa</a></li>
-                        <li class="nav-item-child"><a href="">Hap dau</a></li>
+                        <li class="nav-item-child"><a href="/hair-styles/gallery">Photos Gallery</a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a href="">Contact</a></li>
+                <li class="nav-item"><a href="/about">Abouts Us</a>
+                    <ul class="nav-list-child">
+                        <li class="nav-item-child"><a href="/contact-us">Contact Us</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
@@ -149,63 +176,71 @@
                 <ul class="
                         nav-list
                         d-flex
-                        justify-content-center
+                        justify-content-between
                         align-items-center
                     ">
-                    <li class="nav-item"><a href="">Home</a></li>
+                    <li class="nav-item"><a href="/">Home</a></li>
                     <li class="nav-item">
-                        <a href="">Services <i class="fas fa-sort-down"></i></a>
+                        <a href="/services">Services <i class="fas fa-sort-down"></i></a>
                         <ul class="nav-list-child">
-                            <li class="nav-item-child">
-                                <a href="">Goi dau</a>
-                            </li>
-                            <li class="nav-item-child"><a href="">Uon</a></li>
-                            <li class="nav-item-child"><a href="">Xa</a></li>
-                            <li class="nav-item-child">
-                                <a href="">Hap dau</a>
-                            </li>
+                            <li class="nav-item-child"><a href="/services#Cut+Style">Cut + Style</a></li>
+                            <li class="nav-item-child"><a href="/services#Color">Color</a></li>
+                            <li class="nav-item-child"><a href="/services#Texture">Texture</a></li>
+                            <li class="nav-item-child"><a href="/services#Specialty">Specialty</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="">Hair Problems <i class="fas fa-sort-down"></i></a>
+                        <a href="/hair-problems">Hair Problems <i class="fas fa-sort-down"></i></a>
                         <ul class="nav-list-child">
                             <li class="nav-item-child">
-                                <a href="">Goi dau</a>
+                                <a href="/hair-problems?type=Hair growth">Hair growth</a>
                             </li>
-                            <li class="nav-item-child"><a href="">Uon</a></li>
-                            <li class="nav-item-child"><a href="">Xa</a></li>
                             <li class="nav-item-child">
-                                <a href="">Hap dau</a>
+                                <a href="/hair-problems?type=Frizzy hair">Frizzy hair</a>
                             </li>
+                            <li class="nav-item-child">
+                                <a href="/hair-problems?type=Hair loss">Hair loss</a>
+                            </li>
+                            <li class="nav-item-child">
+                                <a href="/hair-problems?type=Split ends">Split ends</a>
+                            </li>
+                            <li class="nav-item-child">
+                                <a href="/hair-problems?type=Dandruff">Dandruff</a>
+                            </li>
+                            <li class="nav-item-child">
+                                <a href="/hair-problems?type=Dull lifeless hair">Dull lifeless hair</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="/booking"
+                            style="border-left: 2px solid;border-right: 2px solid;border-radius: 20px;">Booking</a></li>
+                    <li class="nav-item">
+                        <a href="/products">Products <i class="fas fa-sort-down"></i></a>
+                        <ul class="nav-list-child">
+                            <li class="nav-item-child"><a href="/products?category=Shampoo">Shampoo</a></li>
+                            <li class="nav-item-child"><a href="/products?category=Nature Haircare">Nature Haircare</a>
+                            </li>
+                            <li class="nav-item-child"><a href="/products?category=Hair Treatments">Hair Treatments</a>
+                            </li>
+                            <li class="nav-item-child"><a href="/products?category=Styling Products">Styling
+                                    Products</a></li>
+                            <li class="nav-item-child"><a href="/products?category=Hair Dryers">Hair Dryers</a></li>
+                            <li class="nav-item-child"><a href="/products?category=Flat Irons">Flat Irons</a></li>
+                            <li class="nav-item-child"><a href="/products?category=Curling Irons">Curling Irons</a></li>
+                            <li class="nav-item-child"><a href="/products?category=Cutting Tools">Cutting Tools</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="">Products <i class="fas fa-sort-down"></i></a>
+                        <a href="/hair-styles">Hair Style <i class="fas fa-sort-down"></i></a>
                         <ul class="nav-list-child">
-                            <li class="nav-item-child">
-                                <a href="">Goi dau</a>
-                            </li>
-                            <li class="nav-item-child"><a href="">Uon</a></li>
-                            <li class="nav-item-child"><a href="">Xa</a></li>
-                            <li class="nav-item-child">
-                                <a href="">Hap dau</a>
-                            </li>
+                            <li class="nav-item-child"><a href="/hair-styles/gallery">Photos Gallery</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="">Booking <i class="fas fa-sort-down"></i></a>
+                    <li class="nav-item"><a href="/about">Abouts Us</a>
                         <ul class="nav-list-child">
-                            <li class="nav-item-child">
-                                <a href="">Goi dau</a>
-                            </li>
-                            <li class="nav-item-child"><a href="">Uon</a></li>
-                            <li class="nav-item-child"><a href="">Xa</a></li>
-                            <li class="nav-item-child">
-                                <a href="">Hap dau</a>
-                            </li>
+                            <li class="nav-item-child"><a href="/contact-us">Contact Us</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -219,56 +254,81 @@
 <div class="menu-mobile">
     <h3>Menu</h3>
     <ul class="nav-mobile-list">
-        <li class="nav-item-mobile"><a href="">Home</a></li>
+        <li class="nav-item-mobile"><a href="/">Home</a></li>
         <li class="nav-item-mobile">
-            <a href="">Services</a>
+            <a href="/services">Services</a>
             <div class="nav-item-mobile-icon mobile-icon-control">
                 <i class="fas fa-caret-left"></i>
             </div>
             <ul class="nav-mobile-list-child">
-                <li class="nav-mobile-item-child"><a href="">Goi dau</a></li>
-                <li class="nav-mobile-item-child"><a href="">Uon</a></li>
-                <li class="nav-mobile-item-child"><a href="">Xa</a></li>
-                <li class="nav-mobile-item-child"><a href="">Hap dau</a></li>
+                <li class="nav-mobile-item-child"><a href="/services#Cut+Style">Cut + Style</a></li>
+                <li class="nav-mobile-item-child"><a href="/services#Color">Color</a></li>
+                <li class="nav-mobile-item-child"><a href="/services#Texture">Texture</a></li>
+                <li class="nav-mobile-item-child"><a href="/services#Specialty">Specialty</a></li>
             </ul>
         </li>
         <li class="nav-item-mobile">
-            <a href="">Hair Problems </a>
+            <a href="/hair-problems">Hair Problems </a>
             <div class="nav-item-mobile-icon mobile-icon-control">
                 <i class="fas fa-caret-left"></i>
             </div>
             <ul class="nav-mobile-list-child">
-                <li class="nav-mobile-item-child"><a href="">Goi dau</a></li>
-                <li class="nav-mobile-item-child"><a href="">Uon</a></li>
-                <li class="nav-mobile-item-child"><a href="">Xa</a></li>
-                <li class="nav-mobile-item-child"><a href="">Hap dau</a></li>
+                <li class="nav-mobile-item-child">
+                    <a href="/hair-problems?type=Hair growth">Hair growth</a>
+                </li>
+                <li class="nav-mobile-item-child">
+                    <a href="/hair-problems?type=Frizzy hair">Frizzy hair</a>
+                </li>
+                <li class="nav-mobile-item-child">
+                    <a href="/hair-problems?type=Hair loss">Hair loss</a>
+                </li>
+                <li class="nav-mobile-item-child">
+                    <a href="/hair-problems?type=Split ends">Split ends</a>
+                </li>
+                <li class="nav-mobile-item-child">
+                    <a href="/hair-problems?type=Dandruff">Dandruff</a>
+                </li>
+                <li class="nav-mobile-item-child">
+                    <a href="/hair-problems?type=Dull lifeless hair">Dull lifeless hair</a>
+                </li>
             </ul>
         </li>
+        <li class="nav-item-mobile"><a href="/booking"
+                style="border-left: 2px solid;border-right: 2px solid;border-radius: 10px;">Booking</a></li>
         <li class="nav-item-mobile">
-            <a href="">Products</a>
+            <a href="/products">Products</a>
             <div class="nav-item-mobile-icon mobile-icon-control">
                 <i class="fas fa-caret-left"></i>
             </div>
             <ul class="nav-mobile-list-child">
-                <li class="nav-mobile-item-child"><a href="">Goi dau</a></li>
-                <li class="nav-mobile-item-child"><a href="">Uon</a></li>
-                <li class="nav-mobile-item-child"><a href="">Xa</a></li>
-                <li class="nav-mobile-item-child"><a href="">Hap dau</a></li>
+                <li class="nav-mobile-item-child"><a href="/products?category=Shampoo">Shampoo</a></li>
+                <li class="nav-mobile-item-child"><a href="/products?category=Nature Haircare">Nature Haircare</a></li>
+                <li class="nav-mobile-item-child"><a href="/products?category=Hair Treatments">Hair Treatments</a></li>
+                <li class="nav-mobile-item-child"><a href="/products?category=Styling Products">Styling Products</a>
+                </li>
+                <li class="nav-mobile-item-child"><a href="/products?category=Hair Dryers">Hair Dryers</a></li>
+                <li class="nav-mobile-item-child"><a href="/products?category=Flat Irons">Flat Irons</a></li>
+                <li class="nav-mobile-item-child"><a href="/products?category=Curling Irons">Curling Irons</a></li>
+                <li class="nav-mobile-item-child"><a href="/products?category=Cutting Tools">Cutting Tools</a></li>
             </ul>
         </li>
         <li class="nav-item-mobile">
-            <a href="">Booking</a>
+            <a href="/hair-styles">Hair Styles </a>
             <div class="nav-item-mobile-icon mobile-icon-control">
                 <i class="fas fa-caret-left"></i>
             </div>
             <ul class="nav-mobile-list-child">
-                <li class="nav-mobile-item-child"><a href="">Goi dau</a></li>
-                <li class="nav-mobile-item-child"><a href="">Uon</a></li>
-                <li class="nav-mobile-item-child"><a href="">Xa</a></li>
-                <li class="nav-mobile-item-child"><a href="">Hap dau</a></li>
+                <li class="nav-mobile-item-child"><a href="/hair-styles/gallery">Photos Gallery</a></li>
             </ul>
         </li>
-        <li class="nav-item-mobile"><a href="">Contact</a></li>
+        <li class="nav-item-mobile"><a href="/about">About Us</a><div class="nav-item-mobile-icon mobile-icon-control">
+            <i class="fas fa-caret-left"></i>
+        </div>
+        <ul class="nav-mobile-list-child">
+            <li class="nav-mobile-item-child"><a href="/contact-us">Contact Us</a></li>
+            
+        </ul>
+    </li>
         <li class="nav-item-mobile mobile-back">
             <div style="width: 90%">Back</div>
             <div class="nav-item-mobile-icon">
@@ -277,39 +337,3 @@
         </li>
     </ul>
 </div>
-<!-- Begin modal -->
-<div class="modal fade" id="header-modal">
-    <div class="modal-dialog modal-dialog-centered modal-lg" style="margin-top: -50px">
-        <div class="modal-content" style="padding: 20px">
-            <div class="container">
-                <h2>Sign In / Sign Up</h2>
-                <form action="#">
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"
-                            required />
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd"
-                            required />
-                    </div>
-                    <div class="form-group form-check">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" name="remember" />
-                            Remember me
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-success">Sign In</button>
-                    <button type="submit" class="btn btn-primary">Sign Up</button>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">
-                    Close
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End modal -->

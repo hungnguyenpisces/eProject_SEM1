@@ -4,12 +4,16 @@ const Schema = mongoose.Schema;
 
 const Booking = new Schema(
 	{
-		firstname: String,
-		lastname: String,
-		email: String,
-		phone: String,
-		service: String,
-		date: Date,
+		customer_fullname: String,
+		customer_phone: String,
+		customer_email: String,
+		customer_address: String,
+		service_id: { type: Schema.Types.ObjectId, ref: 'Services' },
+		staff_id: { type: Schema.Types.ObjectId, ref: 'Staff' },
+		datetime: Date,
+		comment: String,
+		rating: { type: Number, default: 0 },
+		status: { type: Number, default: 1 },
 	},
 	{
 		timestamps: true,
